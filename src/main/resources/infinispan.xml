@@ -1,0 +1,7 @@
+<infinispan xmlns="urn:infinispan:config:14.0">
+    <cache-container name="clustered" statistics="true">
+        <transport cluster="my-cluster"/>
+        <distributed-cache name="workQueue" mode="SYNC" owners="2"/>
+        <replicated-cache name="flags"/>
+    </cache-container>
+</infinispan>
